@@ -31,7 +31,7 @@ class ParseJson:
             if list_id == qingdan_id:
                 mytask = Task()
                 mytask.set_title(task.get('title'))
-                print('title--'+mytask.title)
+#                print('title--'+mytask.title)
                 mysubtasks = []
                 for subtask in subtasks:
                     task_id = subtask.get('task_id')
@@ -39,11 +39,12 @@ class ParseJson:
                         mysubtask = Subtask()
                         mysubtask.set_title(subtask.get('title'))
                         mysubtasks.append(mysubtask)
-                        print('subtitle--'+mysubtask.title)
+#                        print('subtitle--'+mysubtask.title)
                 mytask.set_subtasks(mysubtasks)
                 mytasks.append(mytask)
-                print(mytask.title)
+#                print(mytask.title)
 
 
-        for task in myqingdan.tasks:
-            print(task.title)
+        return myqingdan
+#        for task in myqingdan.tasks:
+#            print(task.title)

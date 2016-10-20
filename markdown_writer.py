@@ -15,7 +15,7 @@ class MarkdownWriter:
         self.file.write('---\ntitle: '+title+' \ndate: '+date+' \ncategories: '+categories+' \ntags: '+tags+' \n---\n\n'+des+'\n \n <!-- more -->\n')
 
     def write_task_title(self,task_title):
-        self.file.write(task_title + '\n')
+        self.file.write('\n'+ task_title + '\n\n')
 
     def write_subtask_title(self,subtask_title):
-            self.file.write(subtask_title+'\n')
+        self.file.write(subtask_title+'\n')

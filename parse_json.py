@@ -43,8 +43,9 @@ class ParseJson:
                 mytask.set_subtasks(mysubtasks)
                 mytasks.append(mytask)
 #                print(mytask.title)
-
-
+        
+        mytasks.sort(key=lambda x: x.title, reverse=False)
+        
         return myqingdan
 #        for task in myqingdan.tasks:
 #            print(task.title)

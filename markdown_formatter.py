@@ -37,3 +37,4 @@ class MarkdownFormatter:
 
     def generate_link(self,content,url):
         return '['+content+']('+url+')'
+    

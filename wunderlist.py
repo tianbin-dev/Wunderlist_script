@@ -32,6 +32,7 @@ for task in qingdan.tasks:
     task_title = formatter.generate_H2(task.title)
     writer.write_task_title(task_title)
     for subtask in task.subtasks:
+        subtask.format()
         subtask_title = formatter.generate_list_item(subtask.title)
         writer.write_subtask_title(subtask_title)
 writer.close_file()

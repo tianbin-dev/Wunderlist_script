@@ -28,7 +28,7 @@ qingdan = parse_json.parse('data.json','qingdan_name')
 
 ## 版本说明
 
-* v0.0.1：完成数据解析并输出Markdown文件
+* V0.1：完成数据解析并输出Markdown文件
 
 
 

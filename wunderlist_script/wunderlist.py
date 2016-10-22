@@ -20,3 +20,5 @@ for task in qingdan.tasks:
         writer.write_subtask_title(subtask_title)
 
 writer.close_file()
+
+print ('done')

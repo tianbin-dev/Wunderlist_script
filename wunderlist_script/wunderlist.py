@@ -3,7 +3,7 @@ from parse_json import *
 from markdown_writer import MarkdownWriter
 from markdown_formatter import *
 
-qingdan = parse_json('data.json', 'OpenSource')
+qingdan = parse_json('data.json', 'qingdan_name')
 
 writer = MarkdownWriter('blog.md')
 

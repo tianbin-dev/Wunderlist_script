@@ -3,3 +3,4 @@ data.json
 test.py
 blog.md
 *.py.swp
+.idea/

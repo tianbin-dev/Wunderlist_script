@@ -1,28 +1,31 @@
 # -*- coding: utf-8 -*-
+def generate_h1(content):
+    return '# ' + content
 
-class MarkdownFormatter:
 
-    def generate_H1(self,content):
-        return '# '+content
+def generate_h2(content):
+    return '## ' + content
 
-    def generate_H2(self,content):
-        return '## '+content
 
-    def generate_H3(self,content):
-        return '### '+content
+def generate_H3(content):
+    return '### ' + content
 
-    def generate_H4(self,content):
-        return '#### '+content
 
-    def generate_H5(self,content):
-        return '##### '+content
+def generate_h4(content):
+    return '#### ' + content
 
-    def generate_H6(self,content):
-        return '###### '+content
 
-    def generate_list_item(self,list_item):
-        return '- '+list_item
+def generate_h5(content):
+    return '##### ' + content
 
-    def generate_link(self,content,url):
-        return '['+content+']('+url+')'
-    
+
+def generate_h6(content):
+    return '###### ' + content
+
+
+def generate_list_item(list_item):
+    return '- ' + list_item
+
+
+def generate_link(content, url):
+    return '[' + content + '](' + url + ')'

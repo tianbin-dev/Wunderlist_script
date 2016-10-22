@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 class Qingdan:
 
     def __init__(self):

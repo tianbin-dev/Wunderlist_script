@@ -1,16 +1,13 @@
 # -*- coding: utf-8 -*-
 import json
-from pprint import pprint
 from task import Task
 from subtask import Subtask
 from qingdan import Qingdan
 
-class ParseJson:
 
-    def parse(self,filename,qingdan_name):
-
-        with open(filename) as data_file:    
-            data = json.load(data_file)
+def parse_json(filename, qingdan_name):
+    with open(filename) as data_file:
+        data = json.load(data_file)
         lists = data.get('data').get('lists')
         qingdan_id = ""
         for qingdan in lists:
@@ -34,7 +31,7 @@ class ParseJson:
                 mysubtasks = []
                 for subtask in subtasks:
                     task_id = subtask.get('task_id')
-                    if task_id == task.get('id'): 
+                    if task_id == task.get('id'):
                         mysubtask = Subtask()
                         mysubtask.set_title(subtask.get('title').encode('utf8'))
                         mysubtasks.append(mysubtask)

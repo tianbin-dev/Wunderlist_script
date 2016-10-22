@@ -4,3 +4,4 @@ test.py
 blog.md
 *.py.swp
 .idea/
+.DS_Store

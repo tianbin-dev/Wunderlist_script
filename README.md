@@ -12,7 +12,8 @@
 4. 将data.json移动到wunderlist_script文件夹中
 5. 参照下面提供的方法可以修改清单名，输出的Markdown文件名
 6. 在Terminal中输入 python wunderlist.py
-7. wunderlist文件夹中会出现blog.md，即清单数据文件
+7. wunderlist文件夹中会出现blog.md，即清单数据文件，格式如http://tb-yangshu.github.io/2016/10/19/AndroidGankOpenSource/
+
 
 
 
@@ -23,13 +24,6 @@ qingdan = parse_json.parse('data.json','qingdan_name')
 ```
 
 将`qingdan_name`替换为自己要导出的清单名称
-
-
-
-## 版本说明
-
-* V0.1：完成数据解析并输出Markdown文件
-
 
 
 

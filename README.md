@@ -12,7 +12,7 @@
 4. 将data.json移动到wunderlist_script文件夹中
 5. 参照下面提供的方法可以修改清单名，输出的Markdown文件名
 6. 在Terminal中输入 python wunderlist.py
-7. wunderlist文件夹中会出现blog.md，即清单数据文件，格式如https://tb-yangshu.github.io/2016/12/05/AndroidGankOpenSource/
+7. wunderlist文件夹中会出现blog.md，即清单数据文件，格式参见博客[Android 开源代码干货](https://tb-yangshu.github.io)
 
 
 
